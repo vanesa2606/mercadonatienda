@@ -1,0 +1,109 @@
+header #menu{
+	background-color: white;
+	width:100%;
+	z-index: 9999;
+}
+
+header #menu .navbar {
+	background-color: white;
+	
+}
+.navbar > .row:first-child{
+	width: 100%;
+}
+
+.navbar > .row > .alert{
+	font-family: Muli;
+	font-size: 15px;
+	padding-right: 400px;
+	padding-left: 400px;
+}
+
+.navbar a{
+	color: #47ad74;
+	font-family: Muli;
+}
+.navbar-brand{
+	margin-left: 100px;
+}
+ #imagen {
+	background-image: url("https://www.mercadona.es/img/header-medium.088535.jpg");
+	background-position: center top;
+    background-size: 100% auto;
+    margin-top: 150px;
+}
+
+#imagen p{
+	font-size: 40px;
+	font-family: PT Serif;
+	font-weight: 600;
+	color: white;
+	text-align: left;
+}
+#menu {
+	background-color: white;
+}
+.form-control {
+	width: 250px;
+}
+
+.card-group{
+	margin-top: 20px;
+	margin-left: 100px;
+	margin-right: 150px;
+	margin-bottom: 100px;
+
+}
+
+.card-group > .card > .card-body > .card-title{
+	font-weight: bold;
+	font-family: Muli;
+	margin-right: 80px;
+	margin-bottom: 30px;
+	font-size: 19px;
+
+}
+
+.card-group > .card > .card-body > .card-text{
+	font-family: Muli;
+	font-size: 15px;
+	color:#5f5e5a;
+	
+}
+.card-group > .card > .card-body > .card-link{
+	font-family: Muli;
+	color: #47ad74;
+	font-size: 14px;
+	}
+.card-group > .card{
+	border:0px;
+}
+
+footer > .row{
+	background-color: #1c3037;
+	padding-top: 50px;
+	padding-left: 80px;
+	padding-right: 140px;
+	padding-bottom: 50px;
+	color: white;
+}
+
+footer > .row > .col > ul > dt a{
+	color: white;
+	font-family: Muli;
+}
+
+footer > .row > .col > ul > dt a{
+	font-size: 10px;
+}
+
+footer > .row > .col > ul > dt:first-child a{
+	font-size: 14px;
+}
+
+footer > .row > .col:last-child > ul > dt:nth-child(2) a{
+	font-size: 20px;
+}
+footer > .row > .col:last-child > ul > dt:last-child a{
+	font-size: 32px;
+}

@@ -19,8 +19,8 @@
                 <td>{{ direccion.id }}</td>
                 <td>{{ direccion.direccioncliente }}</td>
                 <td>
-                    <a href="{{ path('direccion_show', {'id': direccion.id}) }}">show</a>
-                    <a href="{{ path('direccion_edit', {'id': direccion.id}) }}">edit</a>
+                    <a href="{{ path('direccion_show', {'id': direccion.id}) }}">Mostrar</a>
+                    <a href="{{ path('direccion_edit', {'id': direccion.id}) }}">Editar</a>
                 </td>
             </tr>
         {% else %}
@@ -31,5 +31,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('direccion_new') }}">Create new</a>
+    <a href="{{ path('direccion_new') }}">Crear nuevo</a>
 {% endblock %}

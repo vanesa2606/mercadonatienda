@@ -1,0 +1,56 @@
+{% extends 'principal/base.html.twig' %}
+
+
+
+
+{% block body %}
+	
+	<div id="imagen">
+		<div class="row">
+			<div class="col">
+			</div>
+			<div class="col">
+				<p>Empieza tu compra<br> en Mercadona</p>
+				<div>	
+				<form class="form-inline my-2 my-lg-0" method="POST" action="{{ path('formulariocp') }}">
+                    <input class="form-control mr-sm-2" name="inputcp" type="text" placeholder="Cógigo postal" >
+                    <button class="btn btn btn-success my-2 my-sm-0" id="cp-entrar" type="submit">ENTRAR  <i class="fas fa-arrow-right"></i></button>
+                </form>		
+							
+				</div>
+				<br>
+				<br>
+				<br>
+			</div>
+		</div>
+
+	</div>	
+	<div class="card-group">
+	  <div class="card">
+	    <img src="https://previews.123rf.com/images/sudowoodo/sudowoodo1509/sudowoodo150900079/45936613-Brillante-icono-de-la-cesta-de-fruta-de-dibujos-animados-manzana-naranja-pl-tano-pera-y-ar-ndano-Ilu-Foto-de-archivo.jpg" width="100" height="100" alt="Carro">
+	    <div class="card-body">
+	      <h5 class="card-title">Nueva web y servicio en Valencia centro</h5>
+	      <p class="card-text">Tu compra en casa de 7:00 a 22:00. Tramos de 1 hora. Calidad y frescura como en tu tienda.</p>
+	    </div>
+	  </div>
+	  <div class="card">
+	    <img src="https://cdn.icon-icons.com/icons2/567/PNG/512/marker_icon-icons.com_54388.png" height="80" width="60" alt="Card image cap">
+	    <div class="card-body">
+	      <h5 class="card-title">Próximamente en otras zonas</h5>
+	      <p class="card-text">Si quieres que te avisemos, déjanos tu email y tu código postal</p>
+	      <a href="#" class="card-link">Sí, avisadme</a>
+	    </div>
+	  </div>
+	  <div class="card">
+	    <img src="https://www.escale-pelissanne.fr/images/stories/virtuemart/product/9353062-dessin-souriant-ordinateur-de-bureau-illustration-vectorielle_0.jpg" height="80" width="80" alt="Card image cap">
+	    <div class="card-body">
+	      <h5 class="card-title">La versión clásica sigue existiendo</h5>
+	      <p class="card-text">Si al introducir tu código postal, aún no llegamos a tu zona, puedes seguir comprando en Mercadona a través de la web de siempre.</p>
+	    </div>
+	  </div>
+	</div>
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d12364.273676179198!2d-7.0122136!3d39.218611800000005!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1527835017462" width="1340" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+{% endblock %}

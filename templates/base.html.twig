@@ -2,11 +2,42 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <title>
+        {% block title %}Mercadona{% endblock %}
+        </title>
+
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{asset('build/appstyle.css') }}">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+               
+            <link rel="stylesheet" href="{{asset('build/principal.css') }}">
+               
+
+        {% endblock %}
+
     </head>
     <body>
+
+        {% block header %}
+
+
+        {% endblock %}
+
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+
+        {% block footer %}
+        {% include '_base/footer.html.twig' %}
+        {% endblock %}
+        
+        {% block javascripts %}
+
+            <script src="{{ asset('build/app.js') }}"></script>
+                {% block javascripts_extra %}
+
+                <script src="{{ asset('build/principal.js') }}"></script>
+            
+                {% endblock %}
+        {% endblock %}
     </body>
+
 </html>
