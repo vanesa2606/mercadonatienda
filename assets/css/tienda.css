@@ -1,0 +1,90 @@
+#menu{
+	background-color: white;
+	width:100%;
+	z-index: 9999;
+}
+
+#menu > .navbar > ul > .input-group > input{
+
+	width:120px;
+}
+#menu > .navbar > a > img{
+	margin-right: 40px;
+}
+#menu > .navbar {
+
+	text-align: left;
+	margin-top: 15px;
+}
+
+#menu > .navbar > ul > li > a{
+	font-size: 12px;
+	font-family: Muli;
+	font-weight: bold;
+	margin-left: 30px;
+}
+#menu input{
+	border-top-right-radius: 20px; 
+	border-bottom-right-radius: 20px;
+	border-left-color:#f8f8f7;
+	background-color: #f8f8f7;
+}
+
+#menu button{
+	border-top-left-radius: 20px; 
+	border-bottom-left-radius: 20px;
+	border-right-color: #f8f8f7;
+	border-left-color: #ced4da;
+	border-top-color: #ced4da;
+	border-bottom-color: #ced4da;
+	background-color: #f8f8f7;
+}
+
+#menu .input-group > .dropdown-menu > h6{
+	margin-left: 20px;
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#menu > .navbar > ul > li:nth-child(4){
+	margin-left: 300px;
+}
+
+.container{
+	margin-top: 150px;
+	margin-left: 180px;
+	
+}
+
+.container > .row > .col-md-4:first-child{
+	background-color: #79bdce;
+	color:white;
+	padding-top: 20px;
+	font-size: 15px;
+	padding-left:20px;
+}
+
+.col15 {
+	width: 18%;
+	min-height: 400px
+}
+
+.col15 img {
+	width: 100%;
+
+}
+
+.row{
+	margin-right: 180px;
+	margin-bottom: 20px;
+}
+
+.col15 > .card > .card-body > h5{
+	font-size: 12px;
+}
+
+.col15 > .card > .card-body > p{
+	font-size: 12px;
+}
+

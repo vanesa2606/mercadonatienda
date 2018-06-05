@@ -24,7 +24,7 @@ class Producto
     private $nombre;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="float")
      */
     private $precio;
 
@@ -43,6 +43,11 @@ class Producto
      * @ORM\OneToMany(targetEntity="App\Entity\PedidoProductoCantidad", mappedBy="producto")
      */
     private $pedidoscantidad;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $imagen;
 
     public function __construct()
     {
@@ -129,6 +134,18 @@ class Producto
                 $pedidoscantidad->setProducto(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getImagen(): ?string
+    {
+        return $this->imagen;
+    }
+
+    public function setImagen(string $imagen): self
+    {
+        $this->imagen = $imagen;
 
         return $this;
     }
